@@ -11,5 +11,6 @@ To test it, we benchmark 4 million calls to Log.debug()
 	We took 1 ms to do 4 M loops
 
 and without the agent
+
 	$ java  -jar target/log-remover-1.0-SNAPSHOT.jar 
 	We took 33 ms to do 4 M loops
