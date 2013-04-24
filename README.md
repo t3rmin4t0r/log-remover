@@ -14,3 +14,5 @@ and without the agent
 
 	$ java  -jar target/log-remover-1.0-SNAPSHOT.jar 
 	We took 33 ms to do 4 M loops
+
+We do that by looking for /invokeinterface/ opcodes that target the LOG.debug(Object) function & replace it with a much nice /pop2/ operation. The hooks to do this are documented in the java.lang.instrument package (if tersely).
